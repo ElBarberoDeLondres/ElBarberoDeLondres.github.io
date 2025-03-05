@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Barbero de Londres - Mr. Bricker</title>
+    <style>
+        @media (max-width: 768px) {
+    nav { display: flex; flex-direction: column; align-items: center; }
+    nav a { margin: 10px 0; }
+    .servicios { flex-direction: column; align-items: center; }
+    .servicio { width: 90%; }
+}
+        body { font-family: Arial, sans-serif; margin: 0; padding: 100px 0 0 0; background-color: #000000; }
+        header { background-color: #222; color: white; text-align: center; padding: 15px 0; font-size: 24px; position: fixed; top: 0; width: 100%; z-index: 1000; }
+         img { position: absolute; top: 1px; left: 10px; height: 150px ;}
+         h5 {text-align: center; background-color: rgba(235, 220, 220, 0.77); margin: 10px; font-size: 28px; padding: 10px; }         nav { background: #222; padding: 15px; text-align: center; width: 100%; margin-top: -15px; margin-bottom: -20px; }
+        nav a { color: white; text-decoration: none; margin: 15px; font-size: 18px; display: inline-block; }
+              .container { background-image: url('sillones.jpg'); background-size:auto; background-position: center;  width: 90%; max-width: 1000px; margin: auto; padding: 20px; }
+              h4 {color: white; text-decoration: none; margin: 15px; font-size: 18px; display: inline-block; }
+        .servicios { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .servicio { background: rgba(235, 220, 220, 0.77); padding: 20px; margin: 10px; border-radius: 5px; box-shadow: 10px 10px 10px rgb(0, 0, 0); text-align: center; }
+        .contacto { text-align: center; margin-top: 20px; color: white;}
+        .btn { background: #d32f2f; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
+        .redes { text-align: center; margin-top: 20px; }
+        .redes a { margin: 10px; text-decoration: none; font-size: 20px; color: #000000; }
+        .redes h2 {color: #000000;}
+        .nosotros { text-align: center; margin-top: 40px; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .servicio {opacity: 0; transform: translateY(20px); animation: fadeIn 1.5s forwards ; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body
+>
+    <header>
+        <div><img src="LogoB.png" >
+          <H4>  El Barbero de Londres - Mr. Bricker</H4>    
+        
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#redes">Redes Sociales</a>
+            <a href="#nosotros">Acerca de Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav></div>
+    </header>
+    <div class="container">
+        
+             <h5 id="servicios"  >Nuestros Servicios </h5>
+            
+        <div class="servicios">
+            <div class="servicio">
+                <h3>Corte Mr. Bricker</h3>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DEm3-dMAFhi/" data-instgrm-version="14">
+                </blockquote> 
+               
+                <p>Un corte de precisión con un estilo único.</p>
+                <strong>$240</strong>
+            </div>
+            <div class="servicio">
+                <h3>Afeitado y Barba</h3>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DEzv65Rx3z8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14">
+                </blockquote> 
+                <p>Definición y cuidado para una barba impecable.</p>
+                <strong>$180</strong>
+            </div>
+            <div class="servicio">
+                <h3>Greca Sencilla</h3>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFL-GWKT4dI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14">
+                </blockquote> 
+                <p>Detalles que marcan la diferencia en tu estilo.</p>
+                <strong>$50</strong>
+            </div>
+            <div class="servicio">
+                <h3>Greca Sencilla</h3>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFbMlNEz1_1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14">
+                </blockquote> 
+                <p>Detalles que marcan la diferencia en tu estilo.</p>
+                <strong>$50</strong>
+            </div>
+            <div class="servicio">
+                <h3>Greca Sencilla</h3>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFfk8QPvhwD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14">
+                </blockquote> 
+                <p>Detalles que marcan la diferencia en tu estilo.</p>
+                <strong>$50</strong>
+            </div>  
+        </div>
+        
+        <div id="nosotros" class="nosotros">
+            <h2>Acerca de Nosotros</h2>
+            <p>En <strong>El Barbero de Londres - Mr. Bricker</strong>, no solo ofrecemos cortes, sino experiencias. 
+            Nuestro equipo de barberos expertos trabaja con precisión y pasión para asegurarse de que cada cliente 
+            luzca impecable y salga con la mejor versión de sí mismo.</p>
+            <div id="redes" class="redes">
+                <h2>Síguenos en Redes Sociales</h2>
+                <a href="https://wa.me/XXXXXXXXXX">WhatsApp</a> |
+                <a href="https://www.instagram.com">Instagram</a> |
+                <a href="https://www.facebook.com">Facebook</a>
+            </div>
+            <div id="ubicacion">
+                <h2>Visítanos</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.725710564506!2d-99.02559998185909!3d19.42425371328071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fcb06ed6556d%3A0x40484df978981240!2sEl%20Barbero%20De%20Londres!5e0!3m2!1ses-419!2smx!4v1741059959862!5m2!1ses-419!2smx"
+                    width="100%" height="300" style="border:0;" allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+    </div>
+        <div id="contacto" class="contacto">
+            <h2>Reserva tu cita</h2>
+            <p>Haz tu cita y déjate consentir por los expertos.</p>
+            <a href="https://wa.me/XXXXXXXXXX" class="btn">Agendar por WhatsApp</a>
+        </div>
+        <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
